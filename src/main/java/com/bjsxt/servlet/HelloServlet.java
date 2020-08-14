@@ -12,10 +12,14 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        User user=new User();
-        user.setId(1);
-        user.setName("hah");
-        user.setAge(12);
-        resp.getWriter().write("hello,"+user.toString());
+        User user1=new User();
+        User user2=new User();
+        user1.setId(1);
+        user1.setName("hah");
+        user1.setAge(12);
+        user2.setId(1);
+        user2.setName("hah");
+        user2.setAge(12);
+        resp.getWriter().write("hello,"+user1.toString()+","+user2.toString());
     }
 }
