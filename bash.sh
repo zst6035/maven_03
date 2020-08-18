@@ -32,7 +32,7 @@ rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f $TOMCAT_APP_PATH/webapps/maven_03.war
 
 # 复制新的工程
-cp $PROJ_PATH/order/target/maven_03.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/Maven_03/target/maven_03.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv maven_03.war ROOT.war
